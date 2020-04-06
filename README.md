@@ -1,1 +1,7 @@
 # layered-magnetic-structure-modeling
+
+This project includes some approaches to model the magnetic structure for MnBi<sub>2</sub>Te<sub>4</sub>. 
+
+At the beginning, the **linear chain model** (LC) is used to investigate the properties of this system at zero temperature. The main problem is to get all the solutions to a set of equations, which can be easily fulfilled by the function `NSolve` in *Wolfram Mathematica 12*. To make full use of the function, some transformations are performed in advance because some equavalent forms might be easier to solve.
+
+Then, the temperature-dependent effects are explored, and three models are discussed here. The first is the **generized linear chain model**, where the calculation methods are exactly the same as zero temperature. The only temperature effect considered here is the change of average magnetization per layer. The second model is the **mean-field approach** (MF) applied to intralayer interactions, while the interlayer interactions are considered completely. Self-consistent methods are performed to get the thermodynamical value of the magnatization for each layer, and sometimes Monte-Carlo methods (Metropolis algorithm) are used for numerial integration. The final model relies on the **Monte-Carlo simulation** (MC) applied directly on the original energy function. All the interactions are considered accurately in this model, but its result relies on first-principle calculations for pure materials, which may expierience an obvious variation compared to the real materials in experiments.
