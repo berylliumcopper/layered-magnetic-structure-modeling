@@ -370,6 +370,8 @@ int main()
 		cin >> str;
 		cout << "Temperature:\n";
 		cin >> x1;
+		string s1 = str + to_string(N) + "-" + to_string(x1) + "_0.dat";
+		string s1_M_H = str + to_string(N) + "-" + to_string(x1) + "_0-MH.txt";
 		sys_run(s1.c_str(),s1_M_H.c_str(),x1);
 		system("pause");
 	}
