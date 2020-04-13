@@ -274,8 +274,6 @@ Result_M_C<p> M_C<p>::run(ofstream& os)
 
 constexpr int N{ 3 };
 
-int counte{ 0 };
-
 void sys_run(const char* ofile, const char* ofile_M_H, double temperature0)
 {
 	double temperature = temperature0 * 8.617333262145e-5 / 4.607 / 5.7883818012e-5 / 1.000;
@@ -359,8 +357,7 @@ void sys_run(const char* ofile, const char* ofile_M_H, double temperature0)
 	}//
 	os.close();
 	os_M_H.close();
-	cout << temperature0 << "\tfinished." << counte << "\n";
-	counte++;
+	cout << temperature0 << "\tfinished." << "\n";
 }
 
 int main()
